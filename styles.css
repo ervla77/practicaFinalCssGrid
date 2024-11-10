@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: "Roboto", sans-serif;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.start-title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 100px;
+}
+.start-container {
+    display: grid;
+    grid-template-columns: minmax(414px, 1fr) 1fr;
+    grid-auto-rows: 400px;
+    margin: 100px 0;
+    background-color: #69c7f1;
+    border-radius: 20px;
+}
+.start-info {
+    align-self: center;
+    padding: 20px;
+}
+.start-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: blueviolet;
+}
+p {
+    font-size: 1.5rem;
+    color: #333;
+}
+.start-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.route-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 240px));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin: 100px 0;
+}
+.route-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.route-image__big {
+    grid-area: 1 / 1/ 3 / 3;
+}
+.route-title, .chavin-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.chavin-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    margin: 100px 0;
+    gap: 20px;
+}
+.chavin-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+    .start-image {
+        display: none;
+    }
+    .start-container {
+        justify-content: center;
+        text-align: center;
+    }
+    .route-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 134px));
+    }
+}
